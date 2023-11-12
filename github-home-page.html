@@ -7,32 +7,48 @@
     <link rel="stylesheet" href="./github-home-style.css">
 </head>
 <body>
-    <div class="nav-container">
-        <div class="left-nav-items">
-            <p class="nav-item">Products</p>                
-                <!-- <div>
-                    <label for="products">Products</label>
-                    <select id="products">
-                      <option value="Actions">Actions</option>
-                      <option value="Packages">Packages</option>
-                      <option value="Security">Security</option>
-                      <option value="Codespaces">Codespaces</option>
-                      <option value="Copilot">Copilot</option>
-                      <option value="Code review">Code review</option>
-                      <option value="Issues">Issues</option>
-                      <option value="Discussions">Discussions</option>
-                    </select>
-                  </div> -->
-              
-                        
-            <p class="nav-item">Solutions</p>
-            <p class="nav-item">Open Source</p>
-            <p class="nav-item">Pricing</p>
+    <nav class="navbar-container">
+        <div>
+            <ul class="left-nav-items">
+                <li><a href="#" class="nav-item">Products ▾<a/></li>
+                    <ul class="products-menu">                    
+                        <li class="hidden"><a href="Actions"></a>Actions</li>
+                        <li class="hidden"><a href="Packages"></a>Packages</li>
+                        <li class="hidden"><a href="Security"></a>Security</li>
+                        <li class="hidden"><a href="Codespaces"></a>Codespaces</li>
+                        <li class="hidden"><a href="Copilot"></a>Copilot</li>
+                        <li class="hidden"><a href="Code review"></a>Code review</li>
+                        <li class="hidden"><a href="Issues"></a>Issues</li>
+                        <li class="hidden"><a href="Discussions"></a>Discussions</li>
+                    </ul> 
+                <li><a href="#" class="nav-item">Solutions ▾<a/></li>
+                <li><a href="#" class="nav-item">Open Source ▾<a/></li>
+                <li><a href="#" class="nav-item">Pricing<a/></li>
+            </ul>
+            <!-- <div class="logo"><img src="images/awesome-logo.svg"/></div> -->    
         </div>
-        <div class="right-nav-items">
-            <p class="nav-item">Sign in</p>
-            <p class="nav-item" id="sign-out">Sign out</p>
+        <div>
+            <ul  class="right-nav-items">
+                <li><a href="#" class="nav-item"><input class="search-box" placeholder="Search or jump to..."/></a></li>              
+                <li><a href="#" class="nav-item">Sign in<a/></li>
+                <li><a href="#" class="nav-item" id="sign-out">Sign up<a/></li>
+            </ul>
         </div>
-    </div>    
+    </nav>
+
+    <script>
+        // JavaScript to toggle visibility of hidden list items
+        document.addEventListener('DOMContentLoaded', function () {
+            const productsMenu = document.querySelector('.products-menu');
+            const hiddenItems = productsMenu.querySelectorAll('.hidden');
+
+            // Toggle visibility when the "Products" link is clicked
+            document.querySelector('.nav-item[href="#"]').addEventListener('click', function () {
+                hiddenItems.forEach(item => {
+                    item.style.display = (item.style.display === 'none' || item.style.display === '') ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
