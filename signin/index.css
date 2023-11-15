@@ -1,0 +1,193 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    background-color: #f6f8fa;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.container {
+    width: 400px;
+    height: 600px;
+    /* border: solid black 1px; */
+    margin: 0 auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 10px;
+}
+
+.top-section {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bottom-section {  
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: var(--base-text-weight-light, 300);
+    letter-spacing: -0.5px;
+  }
+  
+.signin-with-passkey a {
+    color: #0366d6;
+    text-decoration: none;    
+}
+
+.signin-with-passkey:hover {
+  color: #0366d6;
+  text-decoration: underline;    
+}
+
+.signup-link {
+  /* margin-top: 5px; */
+  display: flex;
+  align-items: center;
+}
+
+.signup-link a {
+  color: #0366d6;
+  text-decoration: none;    
+}
+
+.signup-link a:hover {
+color: #0366d6;
+text-decoration: underline;    
+}
+
+
+.signin-box {
+    background-color: #F6F8FA;
+    border: 1px solid #d1d5da;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;    
+    /* justify-content: center; */
+    /* align-items: center;     */
+}
+
+.signin-box a {
+  color: #0366d6;
+  text-decoration: none;
+  text-align: right;
+}
+
+.signin-box a:hover {
+color: #0366d6;
+text-decoration: underline;    
+}
+
+#password {
+  di
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input:focus {
+border-color: #0366d6;
+}
+
+
+/* Style form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
